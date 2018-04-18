@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Heat Bootcamps | Check-In</title>
+
+	<link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
 </head>
 <body>
 
-	<style type="text/css">
-		#container {
-			position: absolute;
-		    top: 0; right: 0; bottom: 0; left: 0;
-		    /*border: 15px solid orange*/
-		    background-color: #000000;
-		    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
-		}
-
-	</style>
-
-	<main id="container">
+	<div id="container">
 		
-	</main>
+		<video autoplay muted loop id="heat_video">
+			<source src="assets/other/heat_intro_video.mp4" type="video/mp4">
+		</video>
 
+<!-- 		<img id="bg_image" src="assets/other/wkr.png">
+ -->
+		<main id="overlay">
+					
+			<section id="check_in_section">
+				
+				<img id="logo" alt="Heat Bootcamp Logo" src="assets/other/heat_logo.png">
+				<br>
+				<input class="input_text_1" type="text" name="user_id">
+				<br>
+				<button class="submit_btn_1">CHECK IN</button>
+			</section>
 
+		</main>
+
+	</div>
 
 </body>
 </html>
