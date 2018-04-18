@@ -13,7 +13,7 @@ var campers = [
 	},
 	{
 		'id'     : 333333333,
-		'name'   : 'Lean',
+		'name'   : 'Lee',
 		'last'   : 'Perry',
 		'status' : 'waitlist',
 	},
@@ -34,26 +34,45 @@ var campers = [
 $("#check_in_btn").on("click", function() {
 
 	var user_id = $('#id_box').val();
+	var message = $('#message');
 
-	if (user_id.length >= 9) {
+	if (user_id.length <=8) {
+		
+		message.html('The ID you entered is not valid. Please try again.');
+
+		setTimeout(clear, 3000);
+	} else {
 
 		for (var i = 0; i < campers.length; i++) {
-			
-			if (user_id == campers[i].id) {
-				console.log('Welcome ' + campers[i].name + ' ' + campers[i].last + ". You're good to go!");
+
+			var name = campers[i].name;
+			var camper_id = campers[i].id;
+			var status = campers[i].status;
+
+			if (user_id == camper_id && status === 'unregistered') {
+
+				message.html('Hi ' + name + ",<br>You don't seem to be registered.");
+
+				setTimeout(clear, 3000);
+
+			} else if (user_id == camper_id && status === 'waitlist') {
+
+				message.html('Hi ' + name + ",<br>You're still in the waitlist.");
+
+				setTimeout(clear, 3000);
+
+			} else if (user_id == camper_id && status === 'reserved') {
+
+				message.html('Hi ' + name + ",<br>You're good to go!");
+
+				setTimeout(clear, 1500);
+
 			}
 		}
-
-	} else {
-		console.log('this is not a correct id');
 	}
-
 });
 
-
-
-
-
-function checkID() {
-	console.log(campers[0].id + '<br>' + campers[0].name + ' ' + campers[0].last);
-};
+function clear() {
+	$('#id_box').val('');
+	$('#message').html('');
+}
