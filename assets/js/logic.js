@@ -84,7 +84,7 @@ function clear() {
 //-------------------------//
 var bgsArr = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
 
-setInterval(choose_bg, 2000);
+setInterval(choose_bg, 5000);
 
 function choose_bg() {
 
