@@ -84,16 +84,22 @@ function clear() {
 //-------------------------//
 var bgsArr = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
 
-setInterval(choose_bg, 5000);
 
-function choose_bg() {
+
+setInterval(new_bg2, 2000);
+
+function new_bg2() {
 
 	var index_bg 	= Math.floor(Math.random() * bgsArr.length);
 	var active_bg 	= bgsArr[index_bg];
 
-	console.log(index_bg + ' = ' + active_bg);
+	$('#bg').toggleClass('change_bg');
+	$('.bg_one').css('background-image', 'url("assets/images/bg_images/' + active_bg + '.png")');
 
-	$('#bg_image').attr('src', 'assets/images/bg_images/' + active_bg + '.png');
+};
+
+function new_bg1() {
+
 };
 
 

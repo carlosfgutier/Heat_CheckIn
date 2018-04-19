@@ -14,14 +14,32 @@ video {
     filter: grayscale(100%);
 }
 
-#bg_image {
+#bg {
 	position: fixed;
     top: 0; right: 0; bottom: 0; left: 0;
 	width: 100vw;
 	height: 100vh;
 	z-index: 10;
 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	transition: all 0.5s;
 }
+
+.bg_one {
+	background-image: url('../images/bg_images/one.png');
+}
+
+.change_bg {
+	background-image: url('../images/bg_images/two.png');
+}
+
+/*#bg_image {
+	position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+/*}*/
 
 
 /*CONTENT*/
@@ -40,21 +58,6 @@ video {
 	z-index: 12;
 	background-color: hsla(0, 0%, 0%, 0.3);
 }
-
-/*#flex_container {
-	position: absolute;
-	top: 5%; right: 5%; bottom: 5%; left: 5%; 
-	display: flex;
-	justify-content: space-around;
-}
-
-.flex_box {
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.8);
-	text-align: center;
-}*/
-
 
 /*LEFT FLEXB0X*/
 /*/-----------------------------/*/
