@@ -1,3 +1,5 @@
+//CHECK-IN VALIDATION
+//-------------------------//
 var campers = [
 	{
 		'id'     : 111111111,
@@ -76,3 +78,27 @@ function clear() {
 	$('#id_box').val('');
 	$('#message').html('');
 }
+
+
+//BACKGROUND ROTATION
+//-------------------------//
+var bgsArr = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+
+setInterval(choose_bg, 2000);
+
+function choose_bg() {
+
+	var index_bg 	= Math.floor(Math.random() * bgsArr.length);
+	var active_bg 	= bgsArr[index_bg];
+
+	console.log(index_bg + ' = ' + active_bg);
+
+	$('#bg_image').attr('src', 'assets/images/bg_images/' + active_bg + '.png');
+};
+
+
+
+
+
+
+
