@@ -84,18 +84,16 @@ function clear() {
 //-------------------------//
 var bgsArr = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
 
-
-
-setInterval(new_bg2, 2000);
-
-function new_bg2() {
-
-	var index_bg 	= Math.floor(Math.random() * bgsArr.length);
+var index_bg 	= Math.floor(Math.random() * bgsArr.length);
 	var active_bg 	= bgsArr[index_bg];
 
-	$('#bg').toggleClass('change_bg');
-	$('.bg_one').css('background-image', 'url("assets/images/bg_images/' + active_bg + '.png")');
+setInterval(new_bg, 3000);
 
+function new_bg() {
+
+	console.log('I changed');
+	
+	$('#bg').toggleClass('change_bg');
 };
 
 function new_bg1() {
@@ -103,7 +101,7 @@ function new_bg1() {
 };
 
 
-
+// $('.bg_one').css('background-image', 'url("assets/images/bg_images/' + active_bg + '.png")');
 
 
 
