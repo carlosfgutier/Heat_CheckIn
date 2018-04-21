@@ -38,7 +38,7 @@ $("#check_in_btn").on("click", function() {
 	var user_id = $('#id_box').val();
 	var message = $('#message');
 
-	if (user_id.length <=8) {
+	if (user_id.length !=9) {
 		
 		message.html('The ID you entered is not valid. Please try again.');
 
