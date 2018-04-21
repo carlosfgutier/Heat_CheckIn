@@ -29,42 +29,72 @@ video {
 
 .default_image {
 	background-image: url('../images/bg_images/one.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .bg_two {
 	background-image: url('../images/bg_images/two.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .bg_three {
 	background-image: url('../images/bg_images/three.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .bg_four {
 	background-image: url('../images/bg_images/four.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .bg_five {
 	background-image: url('../images/bg_images/five.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .bg_six {
 	background-image: url('../images/bg_images/six.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .bg_seven {
 	background-image: url('../images/bg_images/seven.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .bg_eight {
 	background-image: url('../images/bg_images/eight.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .bg_nine {
 	background-image: url('../images/bg_images/nine.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .bg_ten {
 	background-image: url('../images/bg_images/ten.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 /*CONTAINER*/
