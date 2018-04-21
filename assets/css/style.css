@@ -24,12 +24,44 @@ video {
 	transition: all 1s;
 }
 
-.bg_one {
+.default_image {
 	background-image: url('../images/bg_images/one.png');
 }
 
-.change_bg {
+.bg_two {
 	background-image: url('../images/bg_images/two.png');
+}
+
+.bg_three {
+	background-image: url('../images/bg_images/three.png');
+}
+
+.bg_four {
+	background-image: url('../images/bg_images/four.png');
+}
+
+.bg_five {
+	background-image: url('../images/bg_images/five.png');
+}
+
+.bg_six {
+	background-image: url('../images/bg_images/six.png');
+}
+
+.bg_seven {
+	background-image: url('../images/bg_images/seven.png');
+}
+
+.bg_eight {
+	background-image: url('../images/bg_images/eight.png');
+}
+
+.bg_nine {
+	background-image: url('../images/bg_images/nine.png');
+}
+
+.bg_ten {
+	background-image: url('../images/bg_images/ten.png');
 }
 
 /*#bg_image {

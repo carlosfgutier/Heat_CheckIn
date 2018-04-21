@@ -68,10 +68,9 @@ $("#check_in_btn").on("click", function() {
 				message.html('Hi ' + name + ",<br>You're good to go!");
 
 				setTimeout(clear, 1500);
-
-			}
-		}
-	}
+			};
+		};
+	};
 });
 
 function clear() {
@@ -82,27 +81,27 @@ function clear() {
 
 //BACKGROUND ROTATION
 //-------------------------//
-var bgsArr = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
-
-var index_bg 	= Math.floor(Math.random() * bgsArr.length);
-	var active_bg 	= bgsArr[index_bg];
+var bgsArr 	= ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
+var current = 0;
+var next 	= current + 1;
 
 setInterval(new_bg, 3000);
 
 function new_bg() {
 
-	console.log('I changed');
-	
-	$('#bg').toggleClass('change_bg');
+	if (next > 9) {
+		reset();
+	} else {
+
+		$('#bg').removeClass('bg_' + bgsArr[current]).addClass('bg_' + bgsArr[next]);
+		current++;
+		next++;
+	}
 };
 
-function new_bg1() {
-
-};
-
-
-// $('.bg_one').css('background-image', 'url("assets/images/bg_images/' + active_bg + '.png")');
-
-
-
+function reset() {
+	$('#bg').removeClass('bg_one bg_two bg_three bg_four bg_five bg_six bg_seven bg_eight bg_nine bg_ten');
+	current = 0;
+	next = current +1;
+}
 
