@@ -15,7 +15,7 @@ var campers = [
 	},
 	{
 		'id'     : 333333333,
-		'name'   : 'Lee',
+		'name'   : 'Flor',
 		'last'   : 'Perry',
 		'status' : 'waitlist',
 	},
